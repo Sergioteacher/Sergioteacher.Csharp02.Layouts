@@ -24,5 +24,14 @@ namespace Sergioteacher.Csharp02.Layouts
         {
             InitializeComponent();
         }
+
+        
+
+        private void Ventana1_SizeChanged(object sender, SizeChangedEventArgs e)
+        {
+            miniDebug.Text = " Tamaño: " + Ventana1.Width.ToString();
+            G1.Width = Ventana1.Width - 24;
+            G2.Width = Ventana1.Width - 24;
+        }
     }
 }

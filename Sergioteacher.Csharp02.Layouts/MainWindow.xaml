@@ -6,17 +6,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Sergioteacher.Csharp02.Layouts"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" FontSize="20" >
+        Title="MainWindow"  SizeChanged="Ventana1_SizeChanged"  Height="450" Width="800" FontSize="20" >
     <DockPanel HorizontalAlignment="Left" LastChildFill="True"  >
         <Label Content="Label" DockPanel.Dock="Top" HorizontalAlignment="Center"   />
         <TextBox x:Name="miniDebug" DockPanel.Dock="Bottom"  Text="Cargando ... " TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Bottom" IsEnabled="False" />
         
         <TabControl    >
             <TabItem Header="TabItem">
-                <Grid Background="#FFE5E5E5"  />
+                <Grid x:Name="G1" Background="#FFE5E5E5"  />
             </TabItem>
             <TabItem Header="TabItem">
-                <Grid Background="#FFE5E5E5" />
+                <Grid x:Name="G2" Background="#FFE5E5E5"  />
             </TabItem>
         </TabControl>
 
