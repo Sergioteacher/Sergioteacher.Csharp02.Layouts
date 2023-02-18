@@ -11,26 +11,46 @@
         <Label Content="Ejemplos de diseño con XAML." DockPanel.Dock="Top" HorizontalAlignment="Center"   />
         <TextBox x:Name="miniDebug" DockPanel.Dock="Bottom"  Text="Cargando ... " TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Bottom" IsEnabled="False" />
         
-        <TabControl    >
+        <TabControl x:Name="TControl" >
             <TabItem Header="StackPanel">
-                <Grid x:Name="G1" Background="#FFE5E5E5"  />
+                <StackPanel Background="#FFE5E5E5"   >
+                    <Label Content="Label 1" Background="AliceBlue"/>
+                    <Label Content="Label 2" Background="Beige"/>
+                    <Label Content="Label 3" Background="BlueViolet"/>
+                    <Label Content="Label 4" Background="Magenta"/>
+                    <Label Content="Label 5" Background="Brown"/>
+                </StackPanel>
             </TabItem>
             <TabItem Header="WarPanel">
-                <Grid x:Name="G2" Background="#FFE5E5E5"  />
+                <WrapPanel Background="#FFE5E5E5" >
+                    <Label Content="Label largaaaaaa 1" Background="AliceBlue"/>
+                    <Label Content="Label largaaaaaa 2" Background="Beige"/>
+                    <Label Content="Label largaaaaaa 3" Background="BlueViolet"/>
+                    <Label Content="Label largaaaaaa 4" Background="Magenta"/>
+                    <Label Content="Label largaaaaaa 5" Background="Brown"/>
+                    <Label Content="Label largaaaaaa 1" Background="AliceBlue"/>
+                    <Label Content="Label largaaaaaa 1" Background="Green"/>
+                </WrapPanel>
             </TabItem>
             <TabItem x:Name="G3" Header="DockPanel">
+                <DockPanel Background="#FFE5E5E5" >
+                    <Label Content="Arriva" DockPanel.Dock="Top" Background="AliceBlue"/>
+                    <Label Content="Izquierda" DockPanel.Dock="Left"  Background="Beige"/>
+                    <Label Content="Derecha" DockPanel.Dock="Right"  Background="BlueViolet"/>
+                    <Label Content="Abajo" DockPanel.Dock="Bottom"  Background="Magenta"/>
+                    <Label Content="  Relleno  " Background="LightCyan"/>
+                </DockPanel>
+            </TabItem>
+            <TabItem Header="Grid">
                 <Grid  Background="#FFE5E5E5"  />
             </TabItem>
-            <TabItem x:Name="G4" Header="Grid">
+            <TabItem Header="Grid">
                 <Grid  Background="#FFE5E5E5"  />
             </TabItem>
-            <TabItem x:Name="G5" Header="UniformGrid">
+            <TabItem Header="Grid">
                 <Grid  Background="#FFE5E5E5"  />
             </TabItem>
-            <TabItem x:Name="G6" Header="Canvas">
-                <Grid  Background="#FFE5E5E5"  />
-            </TabItem>
-            <TabItem x:Name="G7" Header="Viewbox">
+            <TabItem Header="Grid">
                 <Grid  Background="#FFE5E5E5"  />
             </TabItem>
         </TabControl>
