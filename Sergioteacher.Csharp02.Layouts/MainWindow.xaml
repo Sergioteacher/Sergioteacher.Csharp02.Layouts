@@ -6,17 +6,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Sergioteacher.Csharp02.Layouts"
         mc:Ignorable="d"
-        Title="MainWindow"  SizeChanged="Ventana1_SizeChanged"  Height="450" Width="800" FontSize="20" >
+        Title="Layouts"  SizeChanged="Ventana1_SizeChanged"  Height="450" Width="800" FontSize="20" >
     <DockPanel HorizontalAlignment="Left" LastChildFill="True"  >
-        <Label Content="Label" DockPanel.Dock="Top" HorizontalAlignment="Center"   />
+        <Label Content="Ejemplos de diseño con XAML." DockPanel.Dock="Top" HorizontalAlignment="Center"   />
         <TextBox x:Name="miniDebug" DockPanel.Dock="Bottom"  Text="Cargando ... " TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Bottom" IsEnabled="False" />
         
         <TabControl    >
-            <TabItem Header="TabItem">
+            <TabItem Header="StackPanel">
                 <Grid x:Name="G1" Background="#FFE5E5E5"  />
             </TabItem>
-            <TabItem Header="TabItem">
+            <TabItem Header="WarPanel">
                 <Grid x:Name="G2" Background="#FFE5E5E5"  />
+            </TabItem>
+            <TabItem x:Name="G3" Header="DockPanel">
+                <Grid  Background="#FFE5E5E5"  />
+            </TabItem>
+            <TabItem x:Name="G4" Header="Grid">
+                <Grid  Background="#FFE5E5E5"  />
+            </TabItem>
+            <TabItem x:Name="G5" Header="UniformGrid">
+                <Grid  Background="#FFE5E5E5"  />
+            </TabItem>
+            <TabItem x:Name="G6" Header="Canvas">
+                <Grid  Background="#FFE5E5E5"  />
+            </TabItem>
+            <TabItem x:Name="G7" Header="Viewbox">
+                <Grid  Background="#FFE5E5E5"  />
             </TabItem>
         </TabControl>
 

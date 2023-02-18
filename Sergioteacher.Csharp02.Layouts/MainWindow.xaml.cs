@@ -32,6 +32,12 @@ namespace Sergioteacher.Csharp02.Layouts
             miniDebug.Text = " Tamaño: " + Ventana1.Width.ToString();
             G1.Width = Ventana1.Width - 24;
             G2.Width = Ventana1.Width - 24;
+            G3.Width = Ventana1.Width - 24;
+            G4.Width = Ventana1.Width - 24;
+            G5.Width = Ventana1.Width - 24;
+            G6.Width = Ventana1.Width - 24;
+            G7.Width = Ventana1.Width - 24;
+            
         }
     }
 }
