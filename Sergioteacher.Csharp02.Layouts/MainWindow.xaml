@@ -42,7 +42,26 @@
                 </DockPanel>
             </TabItem>
             <TabItem Header="Grid">
-                <Grid  Background="#FFE5E5E5"  />
+                <Grid  Background="#FFE5E5E5"  >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Label Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Content="Label 1" Background="AliceBlue"/>
+                    <Label Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Content="Label 2" Background="Beige"/>
+                    <Label Grid.Row="0" Grid.Column="3" Content="Label 3" Background="BlueViolet"/>
+                    <Label Grid.Row="1" Grid.Column="1" Content="Label 4" Background="Magenta"/>
+                    <Label Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2" Content="Label 5" Background="Brown"/>
+                    <Label Grid.Row="2" Grid.Column="0" Content="Label 7" Background="Chocolate"/>
+                    <Label Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="3" Content="Label 8" Background="Green"/>
+                </Grid>
             </TabItem>
             <TabItem Header="Grid">
                 <Grid  Background="#FFE5E5E5"  />
