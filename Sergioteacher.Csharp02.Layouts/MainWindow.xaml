@@ -34,7 +34,7 @@
             </TabItem>
             <TabItem x:Name="G3" Header="DockPanel">
                 <DockPanel Background="#FFE5E5E5" >
-                    <Label Content="Arriva" DockPanel.Dock="Top" Background="AliceBlue"/>
+                    <Label Content="Arriba" DockPanel.Dock="Top" Background="AliceBlue"/>
                     <Label Content="Izquierda" DockPanel.Dock="Left"  Background="Beige"/>
                     <Label Content="Derecha" DockPanel.Dock="Right"  Background="BlueViolet"/>
                     <Label Content="Abajo" DockPanel.Dock="Bottom"  Background="Magenta"/>
