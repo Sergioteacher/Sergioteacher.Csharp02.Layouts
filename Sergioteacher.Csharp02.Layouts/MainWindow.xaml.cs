@@ -30,7 +30,7 @@ namespace Sergioteacher.Csharp02.Layouts
         private void Ventana1_SizeChanged(object sender, SizeChangedEventArgs e)
         {
            
-            miniDebug.Text = " Tamaño: " + Ventana1.Width.ToString();
+            miniDebug.Text = " Tamaño: " + Ventana1.Width.ToString() + " , " + Ventana1.Height.ToString();
             TControl.Width = Ventana1.Width - 24;
 
         }

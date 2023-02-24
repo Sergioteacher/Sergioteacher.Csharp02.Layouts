@@ -32,7 +32,7 @@
                     <Label Content="Label largaaaaaa 1" Background="Green"/>
                 </WrapPanel>
             </TabItem>
-            <TabItem x:Name="G3" Header="DockPanel">
+            <TabItem Header="DockPanel">
                 <DockPanel Background="#FFE5E5E5" >
                     <Label Content="Arriba" DockPanel.Dock="Top" Background="AliceBlue"/>
                     <Label Content="Izquierda" DockPanel.Dock="Left"  Background="Beige"/>
@@ -63,15 +63,47 @@
                     <Label Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="3" Content="Label 8" Background="Green"/>
                 </Grid>
             </TabItem>
-            <TabItem Header="Grid">
-                <Grid  Background="#FFE5E5E5"  />
+            <TabItem Header="UniformGrid">
+                <UniformGrid  Background="#FFE5E5E5" >
+                    <TextBlock Text="X" Foreground="Indigo" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    <TextBlock Text="O" Foreground="Chocolate" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    <TextBlock Text="X" Foreground="Indigo" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    <TextBlock Text="X" Foreground="Indigo" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    <TextBlock Text="X" Foreground="Indigo" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    <TextBlock Text="O" Foreground="Chocolate" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    <TextBlock Text="O" Foreground="Chocolate" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    <TextBlock Text="O" Foreground="Chocolate" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    <TextBlock Text="X" Foreground="Indigo" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                </UniformGrid>
             </TabItem>
-            <TabItem Header="Grid">
-                <Grid  Background="#FFE5E5E5"  />
+            <TabItem Header="Canvas">
+                <Canvas Background="AliceBlue" >
+                    <TextBlock Canvas.Left="20" Canvas.Top="20" Text="La posiciones son fijas" />
+                    <TextBlock Canvas.Right="20" Canvas.Bottom="50" Text="Aunque ..." />
+                    <TextBlock Canvas.Right="20" Canvas.Bottom="20" Text="relativa a los márgenes." />
+                    <Ellipse Canvas.Left="80" Canvas.Top="80" Width="32" Height="32" Fill="Yellow" Stroke="Black" />
+                    <Ellipse Canvas.Left="88" Canvas.Top="86" Width="4" Height="6" Fill="Black" />
+                    <Ellipse Canvas.Left="99" Canvas.Top="86" Width="4" Height="6" Fill="Black" />
+                    <Path Data="M 5,10 A 3,3 90 0 0 13,10" Stroke="Black" Canvas.Left="86" Canvas.Top="88" />
+                </Canvas>
             </TabItem>
-            <TabItem Header="Grid">
-                <Grid  Background="#FFE5E5E5"  />
+            <TabItem Header="Viewbox">
+                <Viewbox >
+                    <Canvas Background="AliceBlue"  Width="400" Height="200" HorizontalAlignment="Center" VerticalAlignment="Center" >
+                        <TextBlock Canvas.Left="20" Canvas.Top="20" Text="La posiciones son fijas" />
+                        <TextBlock Canvas.Left="20" Canvas.Top="40" Text="relativas a los margenes..." />
+                        <TextBlock Canvas.Right="20" Canvas.Bottom="20" Text="pero... ¡se escala!" />
+
+
+                        <Ellipse Canvas.Left="80" Canvas.Top="80" Width="32" Height="32" Fill="Yellow" Stroke="Black" />
+                        <Ellipse Canvas.Left="88" Canvas.Top="86" Width="4" Height="6" Fill="Black" />
+                        <Ellipse Canvas.Left="99" Canvas.Top="86" Width="4" Height="6" Fill="Black" />
+                        <Path Data="M 5,10 A 3,3 90 0 0 13,10" Stroke="Black" Canvas.Left="86" Canvas.Top="88" />
+                    </Canvas>
+
+                </Viewbox>
             </TabItem>
+            
         </TabControl>
 
     </DockPanel>
